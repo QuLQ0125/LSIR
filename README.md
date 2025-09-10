@@ -62,7 +62,7 @@ f0.m: This is a function for f(x,tau)=(x-tau)I(x>tau).
 
 qn.m: This is an approximation function of  f(x,tau)=(x-tau)I(x>tau).
 
-funTBZ.m: This function is used to construct the objective function for the estimation of Eta and Beta in est_ADMM.m and est_oracle.m.
+funTBZ.m: This function is used to construct the objective function for the estimation of Tau and Beta in est_ADMM.m and est_oracle.m.
 
 ST.m: This function is the solution function corresponding to the Lasso method.
 
