@@ -2,6 +2,7 @@ Software version: Matlab R2020 b or R2021 a.
 Encoding: UTF-8.
 
 (1) The main basic function: est_LSIR.m.
+
 This function is used to obtain the proposed estimators. 
 
 results_LSIR=est_LSIR(Z,X,y,Mn,Beta_initial,Eta_initial,Tau_initial,Alpha_initial,Lambda,t,deltan,cn,pen,maxiter,tol,B,ifplot)
