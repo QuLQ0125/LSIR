@@ -1,44 +1,43 @@
 Software version: Matlab R2020 b or R2021 a.
 Encoding: UTF-8.
 
-(1) The main basic function: est_LSIR.m.
-
+(1) The main basic function: est_LSIR.m.\
 This function is used to obtain the proposed estimators. 
 
 results_LSIR=est_LSIR(Z,X,y,Mn,Beta_initial,Eta_initial,Tau_initial,Alpha_initial,Lambda,t,deltan,cn,pen,maxiter,tol,B,ifplot)
 
-Input：
-Z: The covariates in the linear part.
-X: The covariates in the index part.
-y: The outcomes. 
-Mn: The number of knots.
-Beta_initial: The initial values for beta.
-Eta_initial: The initial values for eta.
-Tau_initial: The initial values for tau.
-Alpha_initial: The initial values for alpha.
-Lambda: Tuning parameter in the penalty.
-t: A parameter that controls the concavity of the penalty function.
-deltan: The tuning parameter for smoothness.
-cn:  A predetermined parameter in BIC.
-pen:  penalty function, i.e. 'SCAD' and 'MCP' .
-MI: The maximum number of iterations.
-tol:  The tolerance parameter.
-B: The times of bootstrap sampling.
+Input：\
+Z: The covariates in the linear part.\
+X: The covariates in the index part.\
+y: The outcomes. \
+Mn: The number of knots.\
+Beta_initial: The initial values for beta.\
+Eta_initial: The initial values for eta.\
+Tau_initial: The initial values for tau.\
+Alpha_initial: The initial values for alpha.\
+Lambda: Tuning parameter in the penalty.\
+t: A parameter that controls the concavity of the penalty function.\
+deltan: The tuning parameter for smoothness.\
+cn:  A predetermined parameter in BIC.\
+pen:  penalty function, i.e. 'SCAD' and 'MCP'.\
+MI: The maximum number of iterations.\
+tol:  The tolerance parameter.\
+B: The times of bootstrap sampling.\
 ifplot: Whether plotting the figures: 'true' or 'flase'.
 
-Output: results_LSIR is a struct type, which inclues
-resultTable: A table including the estimated values, standard errors (SE), confidence interval (CI) and p-value.
-hatalpha: The estimated values of alpha.
-hatbeta: The estimated values of beta.
-hattau: The estimated values of tau
-hateta: The estimated values of eta
-pvalue: The p-values.
-SE: The standard errors (SE).
-CI: The confidence interval (CI).
-R2: The coefficient of determination.
-hatMn: The estimated value of Mn*.
-pvalue_knot: The p-value of testing for knot effects.
-BIC_lambda: The BIC values corresponding to all lambdas.
+Output: results_LSIR is a struct type, which inclues\
+resultTable: A table including the estimated values, standard errors (SE), confidence interval (CI) and p-value.\
+hatalpha: The estimated values of alpha.\
+hatbeta: The estimated values of beta.\
+hattau: The estimated values of tau.\
+hateta: The estimated values of eta.\
+pvalue: The p-values.\
+SE: The standard errors (SE).\
+CI: The confidence interval (CI).\
+R2: The coefficient of determination.\
+hatMn: The estimated value of Mn*.\
+pvalue_knot: The p-value of testing for knot effects.\
+BIC_lambda: The BIC values corresponding to all lambdas.\
 hatlambda: The lambda value that minimizes the BIC.
 
 Another basic functions:
